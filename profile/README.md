@@ -35,12 +35,12 @@ flowchart LR
 
 | Project | What it does |
 |---------|-------------|
-| [**mascarade**](https://github.com/electron-rare/mascarade) | Multi-provider LLM orchestration with P2P mesh networking, RAG pipeline, and StateGraph runtime |
-| [**Kill_LIFE**](https://github.com/electron-rare/Kill_LIFE) | Spec-first embedded systems framework — 6 AI agents generate code from 25 structured specifications |
+| [**mascarade**](https://github.com/electron-rare/mascarade) | Multi-machine agentic LLM orchestration — P2P mesh, 8 providers, RAG pipeline, 29 fine-tuned models |
+| [**Kill_LIFE**](https://github.com/electron-rare/Kill_LIFE) | Spec-first agentic methodology for embedded systems — BMAD agents, gates, evidence packs |
 | [**le-mystere-professeur-zacus**](https://github.com/electron-rare/le-mystere-professeur-zacus) | AI-powered escape room: ESP32-S3 firmware + React game engine + real-time voice pipeline |
 | [**KiC-AI**](https://github.com/electron-rare/KiC-AI) | AI-powered PCB design assistant for KiCad — schematic review, component selection, DRC analysis |
 | [**prima-cpp**](https://github.com/electron-rare/prima-cpp) | Distributed LLM inference engine using pipelined-ring parallelism with CUDA and ZMQ |
-| [**openDIAW.be**](https://github.com/electron-rare/openDIAW.be) | AI-augmented music instruments for live performance — 9 instruments, real-time audio synthesis |
+| [**openDIAW.be**](https://github.com/electron-rare/openDIAW.be) | AI-powered music instruments for live performance — 9 instruments, real-time audio synthesis |
 
 ---
 
@@ -88,7 +88,7 @@ flowchart TB
 
 ---
 
-**1100+ commits** | **8 LLM providers** | **5-node P2P mesh** | **29 fine-tuned models** | **184K dataset examples**
+**2000+ commits** | **8 LLM providers** | **5-node P2P mesh** | **29 fine-tuned models** | **498K dataset examples**
 
 ---
 
