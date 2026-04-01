@@ -46,20 +46,25 @@ flowchart LR
 
 ## FineFab Platform
 
-The org hosts **FineFab** — our AI-native manufacturing and electronics platform, decomposed into focused modules:
+The org hosts **FineFab** (originally *Factory 4 Life*) — our AI-native manufacturing and electronics platform, decomposed into focused modules. The repo naming reflects the project's evolution:
 
-| Module | Role |
-|--------|------|
-| [**life-core**](https://github.com/L-electron-Rare/life-core) | AI backend engine — LLM router, RAG, caching, orchestration |
-| [**life-web**](https://github.com/L-electron-Rare/life-web) | Operator cockpit — Vite + React 19, real-time monitoring |
-| [**life-reborn**](https://github.com/L-electron-Rare/life-reborn) | API gateway — Hono, auth, rate limiting, OpenAPI |
-| [**life-spec**](https://github.com/L-electron-Rare/life-spec) | Spec-first pipeline — specifications, BMAD gates, compliance evidence |
-| [**finefab-shared**](https://github.com/L-electron-Rare/finefab-shared) | Shared contracts — JSON Schema, Pydantic, TypeScript types |
-| [**KIKI-models-tuning**](https://github.com/L-electron-Rare/KIKI-models-tuning) | Fine-tuning pipeline — model training, evaluation, registry |
-| [**makelife-hard**](https://github.com/L-electron-Rare/makelife-hard) | Hardware design — KiCad projects, PCB exports, MCP servers |
-| [**makelife-firmware**](https://github.com/L-electron-Rare/makelife-firmware) | Embedded firmware — ESP32/STM32, PlatformIO, Unity tests |
-| [**makelife-cad**](https://github.com/L-electron-Rare/makelife-cad) | CAD/EDA platform — FastAPI + Next.js 15, AI-assisted design |
-| [**finefab-life**](https://github.com/L-electron-Rare/finefab-life) | Integration runtime — Docker Compose, CI/CD, ops cockpit |
+- **`life-*`** — core platform services (the "Life" in Factory 4 Life)
+- **`makelife-*`** — hardware, firmware, and CAD layers (the "Make" in MakeLife)
+- **`finefab-*`** — shared infrastructure and integration (the unified FineFab identity)
+- **`KIKI-*`** — ML/fine-tuning pipeline (internal codename)
+
+| Module | Layer | Role |
+|--------|-------|------|
+| [**life-core**](https://github.com/L-electron-Rare/life-core) | Platform | AI backend — LLM router, RAG, caching, orchestration |
+| [**life-web**](https://github.com/L-electron-Rare/life-web) | Platform | Operator cockpit — Vite + React 19, real-time monitoring |
+| [**life-reborn**](https://github.com/L-electron-Rare/life-reborn) | Platform | API gateway — Hono, auth, rate limiting, OpenAPI |
+| [**life-spec**](https://github.com/L-electron-Rare/life-spec) | Platform | Spec-first pipeline — specifications, BMAD gates, evidence |
+| [**makelife-hard**](https://github.com/L-electron-Rare/makelife-hard) | Hardware | KiCad projects, PCB exports, MCP servers |
+| [**makelife-firmware**](https://github.com/L-electron-Rare/makelife-firmware) | Hardware | ESP32/STM32 firmware, PlatformIO, Unity tests |
+| [**makelife-cad**](https://github.com/L-electron-Rare/makelife-cad) | Hardware | CAD/EDA platform — FastAPI + Next.js 15, AI-assisted design |
+| [**KIKI-models-tuning**](https://github.com/L-electron-Rare/KIKI-models-tuning) | ML | Fine-tuning pipeline — model training, evaluation, registry |
+| [**finefab-shared**](https://github.com/L-electron-Rare/finefab-shared) | Infra | Shared contracts — JSON Schema, Pydantic, TypeScript types |
+| [**finefab-life**](https://github.com/L-electron-Rare/finefab-life) | Infra | Integration runtime — Docker Compose, CI/CD, ops cockpit |
 
 ---
 
