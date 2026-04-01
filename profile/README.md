@@ -18,15 +18,42 @@ Every layer is designed to be owned, modified, and deployed by the people who us
 
 ## Architecture
 
+Two interconnected ecosystems — the agentic core and the manufacturing platform:
+
 ```mermaid
-flowchart LR
-    KL["<b>Kill_LIFE</b><br/>Spec-first framework<br/>6 BMAD agents · 25 specs<br/>8 HuggingFace datasets"]
-    MA["<b>mascarade</b><br/>LLM orchestration engine<br/>8 providers · P2P mesh<br/>29 fine-tuned models"]
-    CL["<b>crazy_life</b><br/>React cockpit<br/>Workflow editor<br/>Real-time monitoring"]
+flowchart TB
+    subgraph core["Agentic Core"]
+        KL["<b>Kill_LIFE</b><br/>Spec-first methodology<br/>BMAD agents · gates · evidence"]
+        MA["<b>mascarade</b><br/>LLM orchestration<br/>8 providers · P2P mesh<br/>29 fine-tuned models"]
+        CL["<b>crazy_life</b><br/>React cockpit<br/>Workflow editor"]
+    end
+
+    subgraph finefab["FineFab Platform"]
+        direction LR
+        subgraph platform["Platform"]
+            LC["life-core<br/>AI backend"]
+            LW["life-web<br/>Cockpit UI"]
+            LR2["life-reborn<br/>API gateway"]
+            LS["life-spec<br/>Spec pipeline"]
+        end
+        subgraph hardware["Hardware"]
+            MH["makelife-hard<br/>KiCad · PCB"]
+            MF["makelife-firmware<br/>ESP32 · STM32"]
+            MC["makelife-cad<br/>CAD/EDA"]
+        end
+        subgraph ml["ML & Infra"]
+            KK["KIKI-models-tuning<br/>Fine-tuning"]
+            FS["finefab-shared<br/>Contracts"]
+            FL["finefab-life<br/>Docker · CI/CD"]
+        end
+    end
 
     KL -- "specs + datasets" --> MA
     MA -- "inference + state" --> CL
     CL -. "operator commands" .-> MA
+    MA -. "LLM routing" .-> LC
+    KL -. "methodology" .-> LS
+    KK -. "models" .-> MA
 ```
 
 ---
@@ -46,7 +73,7 @@ flowchart LR
 
 ## FineFab Platform
 
-The org hosts **FineFab** (originally *Factory 4 Life*) — our AI-native manufacturing and electronics platform, decomposed into focused modules. The repo naming reflects the project's evolution:
+**FineFab** (originally *Factory 4 Life*) — our AI-native manufacturing and electronics platform, decomposed into focused modules. The repo naming reflects the project's evolution:
 
 - **`life-*`** — core platform services (the "Life" in Factory 4 Life)
 - **`makelife-*`** — hardware, firmware, and CAD layers (the "Make" in MakeLife)
@@ -74,21 +101,21 @@ Five heterogeneous machines, one P2P mesh — a distributed body:
 
 ```mermaid
 flowchart TB
-    subgraph mesh["P2P Mesh Network"]
-        GM["<b>GrosMac</b><br/>Apple M5 · Dev node<br/>Bridge: LAN + Tailscale"]
-        VM["<b>VM</b><br/>Docker host<br/>29+ containers<br/>P2P bootstrap"]
-        TW["<b>Tower</b><br/>31 GB RAM<br/>Langfuse · LiteLLM<br/>Piper TTS"]
-        CI["<b>CILS</b><br/>Most stable node<br/>Ollama inference<br/>17d+ uptime"]
-        KX["<b>KXKM-AI</b><br/>RTX 4090 · 62 GB RAM<br/>GPU inference<br/>Fine-tuning"]
+    subgraph mesh["P2P Mesh Network · Ed25519 auth · DHT discovery"]
+        GM["<b>GrosMac</b><br/>Apple M5 · 16 GB<br/>Dev + P2P bridge<br/>LAN + Tailscale"]
+        VM["<b>VM</b><br/>6.8 GB RAM · 4 CPU<br/>Docker host · 29+ containers<br/>P2P bootstrap node"]
+        TW["<b>Tower</b><br/>31 GB RAM · 28 threads<br/>Langfuse · LiteLLM<br/>Piper TTS · OpenAI proxy"]
+        CI["<b>CILS</b><br/>16 GB RAM · i7<br/>Ollama inference<br/>Most stable node"]
+        KX["<b>KXKM-AI</b><br/>62 GB RAM · RTX 4090<br/>GPU inference · Unsloth<br/>Fine-tuning · Qdrant"]
     end
 
     GM <--> VM
-    VM <--> TW
-    VM <--> CI
-    VM <--> KX
     GM <--> TW
     GM <--> CI
     GM <--> KX
+    VM <--> TW
+    VM <--> CI
+    VM <--> KX
 ```
 
 ---
