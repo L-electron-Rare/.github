@@ -6,6 +6,19 @@
 
 ---
 
+## Latest Releases — April 2026
+
+Two public releases this week, covering the full fine-tuning pipeline:
+
+| Date | Project | Summary |
+|---|---|---|
+| **17/04** | [`clemsail/micro-kiki-v3`](https://huggingface.co/clemsail/micro-kiki-v3) | Cognitive LLM stack for embedded engineering — 35 domain LoRAs on Qwen3.5-35B-A3B, router + negotiator + anti-bias + Aeon memory. Apache 2.0, GGUF, 262K context. |
+| **16/04** | [`L-electron-Rare/KIKI-Mac_tunner`](https://github.com/L-electron-Rare/KIKI-Mac_tunner) | MLX fine-tuning toolkit for Mac Studio — distills Claude Opus reasoning into Mistral Large 123B. Apache 2.0. |
+
+Training pipeline (`KIKI-Mac_tunner`) and its output model (`micro-kiki-v3`) are both open-source. Benchmarks, forks, and negative findings welcome on the [discussion thread](https://huggingface.co/clemsail/micro-kiki-v3/discussions/1).
+
+---
+
 ## The Vision
 
 We build monstrous systems — in Haraway's sense. Hybrid organisms where ESP32 firmware and language models share the same nervous system, where a PCB design agent and a fine-tuned LLM are parts of one body.
