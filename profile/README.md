@@ -1,3 +1,15 @@
+# L'Electron Rare — Org archived 2026-04-22
+
+> **This org is now a redirect shell.** On 2026-04-22, all active FineFab, life, and makelife repositories were transferred to the personal user account **[github.com/electron-rare](https://github.com/electron-rare)** for simpler ownership during the pre-launch phase of the L'Electron Rare business entity.
+>
+> GitHub keeps 301 redirects from these old org URLs for 90 days. After that, update any remaining clones with `git remote set-url origin git@github.com:electron-rare/<repo>.git`.
+>
+> Two repositories stay here for now: [`KIKI-models-tuning`](https://github.com/L-electron-Rare/KIKI-models-tuning) and [`KIKI-Mac_tunner`](https://github.com/L-electron-Rare/KIKI-Mac_tunner) — the ML training toolkits referenced below.
+>
+> Historical context preserved below.
+
+---
+
 # L'Electron Rare
 
 > *"The boundary between physical and non-physical is very imprecise for us."* — Donna Haraway, A Cyborg Manifesto
@@ -111,17 +123,17 @@ Open frontier work on cognition, self-organization, and fine-tuning — public r
 
 | Module | Layer | Role |
 |--------|-------|------|
-| [**life-core**](https://github.com/L-electron-Rare/life-core) | Platform | AI backend — LLM router, RAG, caching, orchestration |
-| [**life-web**](https://github.com/L-electron-Rare/life-web) | Platform | Operator cockpit — Vite + React 19, real-time monitoring |
-| [**life-reborn**](https://github.com/L-electron-Rare/life-reborn) | Platform | API gateway — Hono, auth, rate limiting, OpenAPI |
-| [**life-spec**](https://github.com/L-electron-Rare/life-spec) | Platform | Spec-first pipeline — specifications, BMAD gates, evidence |
-| [**makelife-hard**](https://github.com/L-electron-Rare/makelife-hard) | Hardware | KiCad projects, PCB exports, MCP servers |
-| [**makelife-firmware**](https://github.com/L-electron-Rare/makelife-firmware) | Hardware | ESP32/STM32 firmware, PlatformIO, Unity tests |
-| [**makelife-cad**](https://github.com/L-electron-Rare/makelife-cad) | Hardware | CAD/EDA platform — FastAPI + Next.js 15, AI-assisted design |
+| [**life-core**](https://github.com/electron-rare/life-core) | Platform | AI backend — LLM router, RAG, caching, orchestration |
+| [**life-web**](https://github.com/electron-rare/life-web) | Platform | Operator cockpit — Vite + React 19, real-time monitoring |
+| [**life-reborn**](https://github.com/electron-rare/life-reborn) | Platform | API gateway — Hono, auth, rate limiting, OpenAPI |
+| [**life-spec**](https://github.com/electron-rare/life-spec) | Platform | Spec-first pipeline — specifications, BMAD gates, evidence |
+| [**makelife-hard**](https://github.com/electron-rare/makelife-hard) | Hardware | KiCad projects, PCB exports, MCP servers |
+| [**makelife-firmware**](https://github.com/electron-rare/makelife-firmware) | Hardware | ESP32/STM32 firmware, PlatformIO, Unity tests |
+| [**makelife-cad**](https://github.com/electron-rare/makelife-cad) | Hardware | CAD/EDA platform — FastAPI + Next.js 15, AI-assisted design |
 | [**KIKI-models-tuning**](https://github.com/L-electron-Rare/KIKI-models-tuning) | ML | Fine-tuning pipeline — model training, evaluation, registry |
 | [**KIKI-Mac_tunner**](https://github.com/L-electron-Rare/KIKI-Mac_tunner) | ML | MLX fine-tuning toolkit for Apple Silicon (M3 Ultra / M4 Pro) |
-| [**finefab-shared**](https://github.com/L-electron-Rare/finefab-shared) | Infra | Shared contracts — JSON Schema, Pydantic, TypeScript types |
-| [**finefab-life**](https://github.com/L-electron-Rare/finefab-life) | Infra | Integration runtime — Docker Compose, CI/CD, ops cockpit |
+| [**finefab-shared**](https://github.com/electron-rare/finefab-shared) | Infra | Shared contracts — JSON Schema, Pydantic, TypeScript types |
+| [**finefab-life**](https://github.com/electron-rare/finefab-life) | Infra | Integration runtime — Docker Compose, CI/CD, ops cockpit |
 
 ---
 
