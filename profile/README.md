@@ -137,35 +137,30 @@ Open frontier work on cognition, self-organization, and fine-tuning — public r
 
 ---
 
-## Infrastructure
+## factory-4-life — the consolidated monorepo
 
-Heterogeneous machines, one P2P mesh — a distributed body across CUDA, Apple Silicon, and commodity x86:
+All the FineFab subprojects listed above are assembled inside a single monorepo,
+[**factory-4-life**](https://github.com/electron-rare/factory-4-life), with 21
+git submodules pinned to known-good SHAs. One clone, one `docker compose`, one
+CI-green check across the stack:
 
-```mermaid
-flowchart TB
-    subgraph mesh["P2P Mesh Network · Ed25519 auth · DHT discovery"]
-        GM["<b>GrosMac</b><br/>Apple M5 · 16 GB<br/>Dev + P2P bridge<br/>mac-code scorer · mesh router"]
-        ST["<b>Studio</b><br/>Apple M3 Ultra · 512 GB<br/>MLX training · distill<br/>micro-kiki · 35B SFT"]
-        VM["<b>VM</b><br/>6.8 GB RAM · 4 CPU<br/>Docker host · 29+ containers<br/>P2P bootstrap node"]
-        TW["<b>Tower</b><br/>31 GB RAM · 28 threads<br/>Langfuse · LiteLLM<br/>Piper TTS · OpenAI proxy"]
-        CI["<b>CILS</b><br/>16 GB RAM · i7<br/>Ollama inference<br/>Most stable node"]
-        KX["<b>KXKM-AI</b><br/>62 GB RAM · RTX 4090<br/>GPU inference · Unsloth<br/>Teacher · Qdrant"]
-    end
+| Layer | Submodules |
+|-------|------------|
+| Backend | `life-core`, `life-reborn`, `life-web`, `finefab-shared` |
+| Hardware | `makelife-cad`, `makelife-firmware`, `makelife-hard` |
+| RAG + Web | `rag-web`, `nc-rag-indexer`, `e2e-tests` |
+| Runtime | `finefab-life` (self-contained `docker-compose.prod.yml`) |
+| Meta | `life-spec`, `life-project`, `agent-factory-cockpit` |
 
-    GM <--> VM
-    GM <--> TW
-    GM <--> CI
-    GM <--> KX
-    GM <--> ST
-    VM <--> TW
-    VM <--> CI
-    VM <--> KX
-    ST <--> KX
-```
+**Phase 7 in progress** — Industrialisation et Intégration Complète: hardened
+traefik + Keycloak OIDC across every service, shared forward-auth cookie on
+`.saillant.cc`, nightly RAG indexer, Grafana + Jaeger + Langfuse dashboards
+wired end-to-end. See the monorepo `CLAUDE.md` for the full map of 24 nested
+CLAUDE.md files and per-domain runbooks.
 
 ---
 
-**2000+ commits** | **8 LLM providers** | **6-node P2P mesh** | **32 MoE domain experts** | **MLX + CUDA training** | **500K+ dataset examples**
+**Factory 4 Life monorepo** | **21 submodules** | **Keycloak SSO** | **Traefik + Cloudflare** | **MLX + CUDA fine-tuning** | **Local-first, no cloud lock-in**
 
 ---
 
