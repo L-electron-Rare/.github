@@ -1,27 +1,25 @@
-# L'Electron Rare — Org partially archived 2026-04-22
+# L'Electron Rare
 
-> **Status (updated 2026-05-11).** On 2026-04-22, the historical FineFab,
-> life-*, and makelife-* repositories were transferred to the personal user
+> **Org focus (2026-05).** This organization is the home of the
+> **EU-sovereign LLM serving stack** (`ailiance`), the **autonomous coding
+> agent** (`agent-kiki`), the **EDA pipeline engine** (`euclideda`), and the
+> **hardware co-design framework** (`hardware-coagent`), plus the MLX
+> fine-tuning toolchain.
+>
+> The FineFab manufacturing platform (`life-*`, `makelife-*`, `finefab-*`,
+> Factory 4 Life monorepo) was moved on 2026-04-22 to the personal user
 > account **[github.com/electron-rare](https://github.com/electron-rare)** for
-> simpler ownership during the pre-launch phase of the L'Electron Rare business
-> entity. GitHub keeps 301 redirects from the old org URLs for 90 days (until
-> ~2026-07-22). After that, update any remaining clones with
+> simpler ownership during the pre-launch phase of the L'Electron Rare
+> business entity. GitHub keeps 301 redirects for 90 days; after
+> ~2026-07-22, update remaining clones with
 > `git remote set-url origin git@github.com:electron-rare/<repo>.git`.
->
-> **However**, this org is **not** a pure redirect shell anymore: since the
-> archive, several new repositories have been created here and are actively
-> developed. They are listed below.
->
-> Historical context preserved further down.
 
 ---
 
-## Active in this org (post-archive)
+## Repositories in this org
 
-These are the repositories developed inside `L-electron-Rare` *after* the
-2026-04-22 transfer — the EU-sovereign LLM serving stack, the autonomous
-coding agent, the EDA pipeline engine, and the multi-domain hardware
-co-design framework:
+The active stack — EU-sovereign LLM serving, autonomous coding agent, EDA
+pipeline engine, hardware co-design, and the MLX fine-tuning toolchain:
 
 | Repo | Vis. | Role |
 |------|------|------|
