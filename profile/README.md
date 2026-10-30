@@ -18,10 +18,10 @@ Cette organisation héberge la **chaîne d'outils matériel & EDA** de l'entrepr
 
 | Dépôt | Rôle |
 |---|---|
-| [`euclideda`](https://github.com/L-electron-Rare/euclideda) | Moteur d'orchestration de pipelines pour workflows EDA souverains (Rust). Phase 0. |
-| [`hardware-coagent`](https://github.com/L-electron-Rare/hardware-coagent) | Co-design matériel multi-agent — contraintes paramétriques partagées entre méca, PCB, firmware et coût. |
-| [`kicad-mcp-pro`](https://github.com/L-electron-Rare/kicad-mcp-pro) | Serveur MCP pilotant KiCad en mode headless (adapter NativeBoard). |
-| [`kiki-forge`](https://github.com/L-electron-Rare/kiki-forge) | Pipeline d'entraînement LLM multi-compute pour Mac Studio M3 Ultra. |
+| `euclideda` _(depôt privé)_ | Moteur d'orchestration de pipelines pour workflows EDA souverains (Rust). Phase 0. |
+| `hardware-coagent` _(depôt privé)_ | Co-design matériel multi-agent — contraintes paramétriques partagées entre méca, PCB, firmware et coût. |
+| `kicad-mcp-pro` _(depôt privé)_ | Serveur MCP pilotant KiCad en mode headless (adapter NativeBoard). |
+| `kiki-forge` _(depôt privé)_ | Pipeline d'entraînement LLM multi-compute pour Mac Studio M3 Ultra. |
 | [`mlx`](https://github.com/L-electron-Rare/mlx) | Fork du MLX d'Apple — patches de limites mémoire pour l'entraînement de grands modèles sur M3 Ultra. |
 | [`qet-life`](https://github.com/L-electron-Rare/qet-life) | Fork de QElectroTech (schématique électrotechnique). |
 | [`moodle`](https://github.com/L-electron-Rare/moodle) | Fork de Moodle — a servi au catalogue de formation 2026 (plateforme fermée). |
